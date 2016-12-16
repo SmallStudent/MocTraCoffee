@@ -1,0 +1,468 @@
+body{
+	font-family: sans-serif;
+	font-size: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#header{
+	position: relative;
+	width: 1349px;
+	height: 90px;
+	border-bottom: 1px solid #D3D8E8;
+	background: linear-gradient(white, #D3D8E8);
+}
+#headerL{
+	float: left;
+	margin-left:50px; 
+	margin-top: 10px;
+	height: 80px;
+}
+#headerL img{
+	height: 80px;
+}
+#headerR{
+	float: left;
+	position: absolute;
+	left: 600px;
+	top: 35px;
+	z-index: 3;
+}
+#headerR ul{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+.small{
+	width: 100px;
+
+}
+.long{
+	width: 140px;
+	border-left: 1px solid #D3D8E8;
+	border-right: 1px solid #D3D8E8;
+}
+#headerR ul li{
+	float: left;
+	height: 35px;
+	list-style: none;
+	padding-top: 20px;
+	text-align: center;
+}
+#headerR ul li:hover{
+	border: 1px solid #465586;
+	background-color: #465586;
+
+}
+#headerR ul ul{
+	top:100%;
+	display: none;
+	position: absolute;
+
+}
+#headerR ul ul li{
+	float: none;
+	width: 140px;
+	margin: 0;
+}
+#headerR ul ul li a{
+	color: #fff;
+	font-weight: bold;
+}
+#headerR > ul::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+#headerR ul li:hover ul{
+	display: block;
+	background-color: #465586;
+	width: 142px;
+}
+#header ul li a{
+	text-decoration: none;
+	color: #000;
+}
+#header ul li a:hover{color: #ffffff;}
+/*CSS dangnhap.php*/
+#login{
+	width: 1349px;
+	height: 600px;
+	background-color: #eef0f6;
+}
+#login table{
+	margin: auto;
+}
+#login h2{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	width: 150px;
+	margin-top: 0;
+	margin: auto;
+}
+#login input[type=text], input[type=password]{
+	width: 250px;
+	height: 30px;
+	margin-bottom: 10px;
+	margin-left: 10px;  
+}
+.button input{
+	margin-top: 20px;
+	margin-left: 120px; 
+	width: 70px;
+	height: 30px;
+}
+#content{
+	clear: both;
+}
+#gioithieu{
+	width: 1349px;
+	height: 520px;
+	background-image: url(../images/hinhdong11.gif);
+	background-size: 1349px 520px;
+}
+#gioithieu img{
+	position: absolute;
+	top: 130px;
+	left: 60px;
+	width: 1300px;
+	float: left;
+}
+/*CSS #slide_cafe*/
+#slide_cafe{
+	width: 1349px;
+	height: 600px;
+	background-image: url(../images/hinhnen14.jpg);
+	background-size: 1349px 700px;
+	/*opacity: 0.8;*/
+	overflow: hidden;
+	position: relative;
+}
+#slide_wrap_cf{
+	height: 500px;
+	left: 0pt;
+	position: absolute;
+	top: 0pt;
+	width: 6000px;
+	-moz-transition:left 0.6s ease-in-out;
+    transition:left 0.6s ease-in-out;
+    -webkit-transition:left 0.6s ease-in-out;
+    -o-transition:left 0.6s ease-in-out;
+}
+#slide_wrap_cf img{
+	float: left;
+	margin-top: 150px;
+	margin-right: 550px;
+}
+/*vị trí các nút*/
+#button_cf5{ right: 500px; }
+#button_cf4{ right: 550px; }
+#button_cf3{ right: 600px; }
+#button_cf2{ right: 650px; }
+#button_cf1{ right: 700px; }
+#image_cf1:checked ~ #button_cf1, 
+#image_cf2:checked ~ #button_cf2,
+#image_cf3:checked ~ #button_cf3,
+#image_cf4:checked ~ #button_cf4,
+#image_cf5:checked ~ #button_cf5{
+	width: 7px;
+	height: 7px;
+	margin-bottom: 1px;
+	margin-right: 2px;
+}
+#image_cf1:checked ~ #slide_wrap_cf{ left: 350pt; }
+#image_cf2:checked ~ #slide_wrap_cf{ left: -450pt; }
+#image_cf3:checked ~ #slide_wrap_cf{ left: -1250pt; }
+#image_cf4:checked ~ #slide_wrap_cf{ left: -2100pt; }
+#image_cf5:checked ~ #slide_wrap_cf{ left: -2950pt; }
+
+#image_cf1:checked ~ #text_cf1,
+#image_cf2:checked ~ #text_cf2,
+#image_cf3:checked ~ #text_cf3,
+#image_cf4:checked ~ #text_cf4,
+#image_cf5:checked ~ #text_cf5{
+    opacity:1;
+    left:0;
+}
+/*CSS slide_cream*/
+#slide_cream{
+	width: 1349px;
+	height: 700px;
+	background-image: url(../images/mau1.jpg);
+	background-size: 1349px 700px;
+	overflow: hidden;
+	position: relative;
+}
+#slide_wrap{
+	height: 500px;
+	left: 0pt;
+	position: absolute;
+	top: 0pt;
+	width: 6000px;
+	-moz-transition:left 0.6s ease-in-out;
+    transition:left 0.6s ease-in-out;
+    -webkit-transition:left 0.6s ease-in-out;
+    -o-transition:left 0.6s ease-in-out;
+}
+#slide_wrap img{
+	float: left;
+	margin-top: 100px;
+	margin-right: 550px;
+}
+.input{
+	display: none;
+}
+.label{
+	margin-top:20px; 
+	background-color: #ffffff;
+	border-radius: 20px 20px 20px 20px;
+	cursor: pointer;
+	display:block;
+	height: 12px;
+	position: absolute;
+	width: 12px;
+	z-index: 2;
+	-moz-transition:width 0.4s,height 0.4s ease;
+    -webkit-transition:width 0.4s,height 0.4s ease;
+    -o-transition:width 0.4s,height 0.4s ease;
+    transition:width 0.4s,height 0.4s ease;
+}
+/*vị trí các nút*/
+#button5{ right: 500px; }
+#button4{ right: 550px; }
+#button3{ right: 600px; }
+#button2{ right: 650px; }
+#button1{ right: 700px; }
+#image1:checked ~ #button1, 
+#image2:checked ~ #button2,
+#image3:checked ~ #button3,
+#image4:checked ~ #button4,
+#image5:checked ~ #button5{
+	width: 7px;
+	height: 7px;
+	margin-bottom: 1px;
+	margin-right: 2px;
+}
+#image1:checked ~ #slide_wrap{ left: 400pt; }
+#image2:checked ~ #slide_wrap{ left: -290pt; }
+#image3:checked ~ #slide_wrap{ left: -900pt; }
+#image4:checked ~ #slide_wrap{ left: -1530pt; }
+#image5:checked ~ #slide_wrap{ left: -2150pt; }
+h1{
+    width:1349px;
+    z-index:1;
+    height:50px;
+    margin:0px;
+    position:absolute;
+    top: 0;
+    left:-940px;
+    background-color:rgba(0,0,0,0.8);
+    font-family:calibri;
+    text-transform:uppercase;
+    font-weight:600;
+    color:white;
+    letter-spacing:1px;
+    font-size:18px;
+    text-shadow:0 1px 0 rgba(0,0,0,0.5);
+    line-height:50px;
+    text-indent:15px;
+    opacity:0;
+    -moz-transition:opacity 1s,left 1s ease;
+    -webkit-transition:opacity 1s,left 1s  ease;
+    -o-transition:opacity 1s,left 1s  ease;
+    transition:opacity 1s,left 1s  ease;
+}
+#image1:checked ~ #text1,
+#image2:checked ~ #text2,
+#image3:checked ~ #text3,
+#image4:checked ~ #text4,
+#image5:checked ~ #text5{
+    opacity:1;
+    left:0;
+}
+/*CSS cua tea*/
+#slide_tea{
+	width: 1349px;
+	height: 700px;
+	background-image: url(../images/doc2.jpg);
+	background-size: 1349px 700px;
+	overflow: hidden;
+	position: relative;
+}
+#slide_wrap_tea{
+	height: 500px;
+	left: 0pt;
+	position: absolute;
+	top: 0pt;
+	width: 6000px;
+	-moz-transition:left 0.6s ease-in-out;
+    transition:left 0.6s ease-in-out;
+    -webkit-transition:left 0.6s ease-in-out;
+    -o-transition:left 0.6s ease-in-out;
+}
+#slide_wrap_tea img{
+	float: left;
+	margin-top: 150px;
+	margin-right: 550px;
+}
+/*vị trí các nút*/
+#button_tea5{ right: 500px; }
+#button_tea4{ right: 550px; }
+#button_tea3{ right: 600px; }
+#button_tea2{ right: 650px; }
+#button_tea1{ right: 700px; }
+#image_tea1:checked ~ #button_tea1, 
+#image_tea2:checked ~ #button_tea2,
+#image_tea3:checked ~ #button_tea3,
+#image_tea4:checked ~ #button_tea4,
+#image_tea5:checked ~ #button_tea5{
+	width: 7px;
+	height: 7px;
+	margin-bottom: 1px;
+	margin-right: 2px;
+}
+#image_tea1:checked ~ #slide_wrap_tea{ left: 300pt; }
+#image_tea2:checked ~ #slide_wrap_tea{ left: -500pt; }
+#image_tea3:checked ~ #slide_wrap_tea{ left: -1350pt; }
+#image_tea4:checked ~ #slide_wrap_tea{ left: -2100pt; }
+#image_tea5:checked ~ #slide_wrap_tea{ left: -2900pt; }
+/*CSS cua text_tea*/
+#image_tea1:checked ~ #text_tea1,
+#image_tea2:checked ~ #text_tea2,
+#image_tea3:checked ~ #text_tea3,
+#image_tea4:checked ~ #text_tea4,
+#image_tea5:checked ~ #text_tea5{
+    opacity:1;
+    left:0;
+}
+/*CSS cua eat*/
+#slide_eat{
+	width: 1349px;
+	height: 700px;
+	background-image: url(../images/wallpaper.jpg);
+	background-size: 1349px 700px;
+	overflow: hidden;
+	position: relative;
+/*	opacity: 0.9;*/
+}
+#slide_wrap_eat{
+	height: 500px;
+	left: 0pt;
+	position: absolute;
+	top: 0pt;
+	width: 7000px;
+	-moz-transition:left 0.6s ease-in-out;
+    transition:left 0.6s ease-in-out;
+    -webkit-transition:left 0.6s ease-in-out;
+    -o-transition:left 0.6s ease-in-out;
+}
+#slide_wrap_eat img{
+	float: left;
+	margin-top: 150px;
+	margin-right: 550px;
+}
+/*vị trí các nút*/
+#button_eat5{ right: 500px; }
+#button_eat4{ right: 550px; }
+#button_eat3{ right: 600px; }
+#button_eat2{ right: 650px; }
+#button_eat1{ right: 700px; }
+#image_eat1:checked ~ #button_eat1, 
+#image_eat2:checked ~ #button_eat2,
+#image_eat3:checked ~ #button_eat3,
+#image_eat4:checked ~ #button_eat4,
+#image_eat5:checked ~ #button_eat5{
+	width: 7px;
+	height: 7px;
+	margin-bottom: 1px;
+	margin-right: 2px;
+}
+#image_eat1:checked ~ #slide_wrap_eat{ left: 350pt; }
+#image_eat2:checked ~ #slide_wrap_eat{ left: -700pt; }
+#image_eat3:checked ~ #slide_wrap_eat{ left: -1750pt; }
+#image_eat4:checked ~ #slide_wrap_eat{ left: -2800pt; }
+#image_eat5:checked ~ #slide_wrap_eat{ left: -3800pt; }
+/*CSS cua text_tea*/
+#image_eat1:checked ~ #text_eat1,
+#image_eat2:checked ~ #text_eat2,
+#image_eat3:checked ~ #text_eat3,
+#image_eat4:checked ~ #text_eat4,
+#image_eat5:checked ~ #text_eat5{
+    opacity:1;
+    left:0;
+}
+/*CSS menu.php*/
+#menu{
+	width: 1349px;
+	min-height: 1030px;
+	background-image: url(../images/menu1.jpg);
+	background-size: 1349px;
+
+}
+#menu_cafe{
+	width: 350px;
+	min-height: 250px;
+	position: absolute;
+	top: 450px;
+
+}
+#menu_tea{
+	width: 350px;
+	min-height: 250px;
+	position: absolute;
+	top: 150px;
+	left: 330px;
+}
+#menu_cream{
+	width: 350px;
+	min-height: 250px;
+	position: absolute;
+	top: 450px;
+	left: 700px;
+}
+#menu_eat{
+	width: 350px;
+	min-height: 250px;
+	position: absolute;
+	top: 200px;
+	left: 1000px;
+}
+.menu_ten{
+	float: left;
+}
+.menu_ten ul li{
+	list-style: none;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 120%;
+}
+.menu_gia{
+	float: left;
+}
+.menu_gia ul li{
+	list-style: none;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 120%;
+}
+/*CSS footer*/
+#footer{
+	width: 1349px;
+	height: 120px;
+	background-color: #000;
+	/*opacity: 0.9;*/
+}
+#footer img{
+	float: left;
+	height: 100px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+#footer p{
+	float: right;
+	color: #ffffff;
+	margin-right: 50px;
+	margin-top: 50px;
+}
